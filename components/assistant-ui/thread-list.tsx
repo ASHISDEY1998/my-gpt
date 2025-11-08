@@ -79,6 +79,7 @@ const ThreadListItem: FC = () => {
 const threadTitles: Record<string, string> = {};
 
 // Shared function to get thread title
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const getThreadTitle = (threadId: string, messages: readonly any[]) => {
   // Check if we have a custom title
   if (threadTitles[threadId]) {
